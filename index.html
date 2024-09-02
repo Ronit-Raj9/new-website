@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing's Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <nav>
+            <div class="logo">TT</div>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="glitch-effect">
+            <h1>Turing's Table</h1>
+            <p>Unleashing the power of algorithms and innovation</p>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">Who Are We?</h2>
+            <p>Turing's Table is a cutting-edge community of tech enthusiasts, pushing the boundaries of computer science and mathematics. We thrive on challenging the status quo and exploring the limitless possibilities of technology.</p>
+        </section>
+
+        <section id="events">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div id="event-list" class="card-container"></div>
+            <button id="load-more-events" class="neon-button">Load More Events</button>
+        </section>
+
+        <section id="team">
+            <h2 class="section-title">Our Team</h2>
+            <div id="team-grid" class="card-container"></div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <form id="contact-form" class="neon-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="neon-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Turing's Table. All rights reserved.</p>
+    </footer>
+</body>
+</html>
